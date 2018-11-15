@@ -5,4 +5,4 @@ export default (array, idKey = "id", extraData = {}) => array.reduce((associalis
         associalist.byId[element[idKey]] = element;
     }
     return associalist;
-}, { allIds: [],  byId: {}, ...extraData});
+}, Object.assign({ allIds: [],  byId: {}}, extraData));
