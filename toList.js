@@ -1,4 +1,1 @@
-
-const toList = ({ allIds, byId}) => allIds.map(id => byId[id]);
-
-export default toList;
+export default ({allIds, byId}) => allIds.map(id => byId[id]);
