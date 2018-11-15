@@ -5,5 +5,4 @@ export default (array, idKey = "id", otherData) => array.reduce((associalist, el
         associalist.byId[element[idKey]] = element;
     }
     return associalist;
-}
-, { allIds: [],  byId: {}, ...otherData})
+}, { allIds: [],  byId: {}, ...otherData});
