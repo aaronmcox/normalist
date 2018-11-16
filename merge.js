@@ -1,14 +1,13 @@
 export default (destination, source) => {
-    const { allIds, byId, ...rest } = destination;
-    const newAllIds = allIds.slice(0);
-    const newById = Object.assign({}, byId);
+    const newAllIds = destination.allIds.slice(0);
+    const newById = Object.assign({}, destination.byId);
 
     source.allIds.forEach(id => {
-        if( typeof byId[id] === "undefined" ) {
+        if( typeof destination.byId[id] === "undefined" ) {
             newAllIds.push(id);
         }
         newById[id] = source.byId[id];
     });
 
-    return Object.assign({}, { allIds: newAllIds, byId: newById }, rest);
+    return Object.assign({}, destination, { allIds: newAllIds, byId: newById });
 };
