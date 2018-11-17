@@ -1,7 +1,7 @@
 
-import toList from "../toList";
+import toArray from "../toArray";
 
-test("Calling toList on smallest associalist should yield smallest list", () => {
-    expect(toList({ allIds: [0], byId: { 0: { id: 0 }}}))
+test("Calling toArray on smallest associalist should yield smallest list", () => {
+    expect(toArray({ allIds: [0], byId: { 0: { id: 0 }}}))
     .toEqual([{ id: 0 }]);
 });
