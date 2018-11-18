@@ -1,7 +1,9 @@
 
 import toArray from "../toArray";
+import data from "./data";
 
 test("Calling toArray on smallest associalist should yield smallest list", () => {
-    expect(toArray({ allIds: [0], byId: { 0: { id: 0 }}}))
-    .toEqual([{ id: 0 }]);
+    expect(toArray(data.normalistOfOne))
+    .toEqual(data.arrayOfOne);
 });
+
