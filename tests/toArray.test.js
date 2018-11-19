@@ -17,7 +17,19 @@ test("calling toArray on normalist with mutliple items yields array with 3 items
         .toEqual(data.arrayOfThree);
 });
 
-test("toArray yeilds correct array when the idKey is not 'id'", () => {
+test("toArray yields correct array when the idKey is not 'id'", () => {
     expect(toArray(data.normalistWithNameForId))
+        .toEqual(data.arrayWithNameForId);
+});
+
+test("toArray pulls data from byId and allIds only when called on normalist with additional data", () => {
+    const normalistWithExtras = Object.assign({}, data.normalistOfThree, data.someAdditionalData);
+    expect(toArray(normalistWithExtras))
+        .toEqual(data.arrayOfThree);
+});
+
+test("toArray yields proper array when called with additional data and when idKey !== 'id'", () => {
+    const nlWithExtras = Object.assign({}, data.normalistWithNameForId, data.someAdditionalData);
+    expect(toArray(nlWithExtras))
         .toEqual(data.arrayWithNameForId);
 });

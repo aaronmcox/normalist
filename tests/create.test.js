@@ -22,11 +22,18 @@ test("List with multiple values can be created correctly", () => {
     .toEqual(data.normalistOfThree);
 });
 
-test("Associalist can be created with additional data", () => {
+test("normalist can be created with additional data", () => {
     const list = data.arrayOfThree;
     const normalist = Object.assign({}, data.normalistOfThree, data.someAdditionalData);
 
     expect(create(list, "id", data.someAdditionalData))
     .toEqual(normalist);
+});
+
+test("create yields proper normalist when called with additional data and when idKey !== 'id'", () => {
+    const nlWithExtras = Object.assign({}, data.normalistWithNameForId, data.someAdditionalData);
+
+    expect(create(data.arrayWithNameForId, "name", data.someAdditionalData))
+        .toEqual(nlWithExtras);
 });
 
