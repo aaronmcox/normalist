@@ -1,17 +1,17 @@
-import contains from "./contains";
 import create from "./create";
 import filter from "./filter";
+import find from "./find";
 import merge from "./merge";
 import set from "./set";
 import sort from "./sort";
 import toArray from "./toArray";
 
 export default {
-    contains,
     create,
     filter,
+    find,
     merge,
-    push: set,
+    set,
     sort,
     toArray
 };
