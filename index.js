@@ -2,7 +2,7 @@ import contains from "./contains";
 import create from "./create";
 import filter from "./filter";
 import merge from "./merge";
-import push from "./push";
+import set from "./set";
 import sort from "./sort";
 import toArray from "./toArray";
 
@@ -11,7 +11,7 @@ export default {
     create,
     filter,
     merge,
-    push,
+    push: set,
     sort,
     toArray
 };
