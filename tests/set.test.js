@@ -1,10 +1,11 @@
 
 import set from "../set";
 
-let nl0, nl1;
+let nl0, nl1, nl2;
 beforeEach(() => {
     nl0 = { allIds: [ 1, 2], byId: { 1: { id: 1 }, 2: { id: 2 }}};
     nl1 = { allIds: [ 1, 2], byId: { 1: { id: 1 }, 2: { id: 2 }}, favoriteShow: { name: "Chuck"}};
+    nl2 = { allIds: [ 1, 2], byId: { 1: { diffId: 1 }, 2: { diffId: 2 }}};
 });
 
 // set element that doesn't exist yet
@@ -26,4 +27,11 @@ test("set element for normalist with extra data preserves extra data", () => {
     const expected = { allIds: [ 1, 2, 3], byId: { 1: { id: 1 }, 2: { id: 2 }, 3: { id: 3}}, favoriteShow: { name: "Chuck"}};
 
     expect(set(nl1, {id:3})).toEqual(expected);
+});
+
+test("set works for normalist with alternate idKey", () => {
+    const expected = { allIds: [ 1, 2, 3], byId: { 1: { diffId: 1 }, 2: { diffId: 2 }, 3: { diffId: 3}}};
+
+    expect(set(nl2, { diffId: 3}, "diffId"))
+        .toEqual(expected);
 });
