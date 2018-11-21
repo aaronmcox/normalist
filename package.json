@@ -1,6 +1,6 @@
 {
   "name": "normalist",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Small ES6 library of functions used to manipulate objects commonly used with stores like redux. Operates on objects with an allIds array and a byId object with ids mapped to the data objects",
   "keywords": [
     "redux",
@@ -14,6 +14,12 @@
   "author": "Aaron Cox (https://aaronmcox.com)",
   "license": "MPL-2.0",
   "private": false,
+  "files": [
+    "src/",
+    "lib/",
+    "LICENSE",
+    "README.md"
+  ],
   "dependencies": {},
   "devDependencies": {
     "babel-cli": "^6.26.0",
