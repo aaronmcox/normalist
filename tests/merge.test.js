@@ -1,6 +1,6 @@
 
 import data from "./data";
-import merge from "../merge";
+import merge from "../lib/merge";
 
 let nl0, nl1, nl2, nl3, nl4;
 beforeEach(() => {

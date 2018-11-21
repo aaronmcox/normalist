@@ -1,5 +1,5 @@
 
-import create from "../create";
+import create from "../lib/create";
 import data from "./data";
 
 test("Empty normalist is created from empty list", () => {

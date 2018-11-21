@@ -1,5 +1,5 @@
 
-import sort from "../sort";
+import sort from "../lib/sort";
 
 const numbersAsc = (n1, n2) => n1.data <= n2.data ? -1 : 1;
 let nl0, nl1, nl2;

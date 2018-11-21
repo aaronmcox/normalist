@@ -1,5 +1,5 @@
 
-import find from "../find";
+import find from "../lib/find";
 import data from "./data";
 
 // one result returns element
