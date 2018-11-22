@@ -14,12 +14,6 @@
   "author": "Aaron Cox (https://aaronmcox.com)",
   "license": "MPL-2.0",
   "private": false,
-  "files": [
-    "src/",
-    "lib/",
-    "LICENSE",
-    "README.md"
-  ],
   "dependencies": {},
   "devDependencies": {
     "babel-core": "^6.26.3",
