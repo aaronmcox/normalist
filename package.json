@@ -1,6 +1,6 @@
 {
   "name": "normalist",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "Small ES6 library of functions used to manipulate objects commonly used with stores like redux. Operates on objects with an allIds array and a byId object with ids mapped to the data objects",
   "keywords": [
     "redux",
