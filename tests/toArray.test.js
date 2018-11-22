@@ -1,5 +1,5 @@
 
-import toArray from "../lib/toArray";
+import { toArray } from "..";
 import data from "./data";
 
 test("Calling toArray on empty normalist yields empty array", () => {

@@ -1,3 +1,4 @@
+
 import create from "./create";
 import filter from "./filter";
 import find from "./find";
@@ -6,7 +7,7 @@ import set from "./set";
 import sort from "./sort";
 import toArray from "./toArray";
 
-export default {
+export {
     create,
     filter,
     find,

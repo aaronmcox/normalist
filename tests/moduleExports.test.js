@@ -1,4 +1,4 @@
-import nl from "../lib";
+import * as nl from "..";
 
 test("create is a function", () => {
     expect(typeof nl.create).toBe("function");

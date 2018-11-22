@@ -10,7 +10,7 @@
   ],
   "homepage": "https://github.com/aaronmcox/normalist",
   "bugs": "https://github.com/aaronmcox/normalist/issues",
-  "main": "lib/index.js",
+  "main": "index.js",
   "author": "Aaron Cox (https://aaronmcox.com)",
   "license": "MPL-2.0",
   "private": false,
@@ -22,15 +22,12 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-jest": "^23.6.0",
-    "babel-plugin-syntax-object-rest-spread": "^6.13.0",
     "babel-preset-env": "^1.7.0",
     "jest": "^23.6.0"
   },
   "scripts": {
-    "test": "jest",
-    "build": "babel src --out-dir lib"
+    "test": "jest"
   }
 }
