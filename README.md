@@ -4,7 +4,7 @@ a small libary of es6 functions used to maintain objects that follow or extend t
 # usage
 
 ## installation
-`npm install normlist`
+`npm install normalist`
 
 ## import
 `import * as normalist from "normalist";`
