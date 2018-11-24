@@ -1,4 +1,5 @@
-export default (destination, source) => {
+
+function merge(destination, source) {
     const newAllIds = destination.allIds.slice(0);
     const newById = Object.assign({}, destination.byId);
 
@@ -10,4 +11,6 @@ export default (destination, source) => {
     }
 
     return Object.assign({}, destination, source, { allIds: newAllIds, byId: newById });
-};
+}
+
+export default merge;

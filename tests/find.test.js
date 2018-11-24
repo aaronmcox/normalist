@@ -1,5 +1,5 @@
 
-import { find } from "..";
+import { find } from "../src";
 import data from "./data";
 
 // one result returns element

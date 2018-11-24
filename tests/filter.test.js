@@ -1,6 +1,6 @@
 
 import data from "./data";
-import { filter } from "..";
+import { filter } from "../src";
 
 // empty
 test("filter on empty normalist yields empty list", () => {

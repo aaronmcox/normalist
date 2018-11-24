@@ -1,4 +1,5 @@
-const sort = (normalist, compareFn, idKey = "id") => {
+
+function sort(normalist, compareFn, idKey = "id") {
     if( typeof compareFn !== "function" ) {
         throw new TypeError(`${compareFn} is not a function.`);
     }
@@ -11,6 +12,6 @@ const sort = (normalist, compareFn, idKey = "id") => {
         .map(element => element[idKey]);
 
     return Object.assign({}, normalist, { allIds: newAllIds});
-};
+}
 
 export default sort;

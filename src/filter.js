@@ -1,4 +1,5 @@
-const filter = ({allIds, byId}, filterFunc) => {
+
+function filter({allIds, byId}, filterFunc) {
     const filteredElements = [];
     allIds.forEach(id => {
         const element = byId[id];
@@ -7,6 +8,6 @@ const filter = ({allIds, byId}, filterFunc) => {
         }
     });
     return filteredElements;
-};
+}
 
 export default filter;

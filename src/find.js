@@ -1,4 +1,5 @@
-const find = ({allIds, byId}, testingFn) => {
+
+function find ({allIds, byId}, testingFn) {
     if( typeof testingFn !== "function") {
         throw new TypeError(`${testingFn} is not a function`);
     }
@@ -9,6 +10,6 @@ const find = ({allIds, byId}, testingFn) => {
         }
     }
     return undefined;
-};
+}
 
 export default find;

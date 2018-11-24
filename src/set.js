@@ -1,4 +1,5 @@
-const set = (normalist, newElement, idKey = "id") => {
+
+function set(normalist, newElement, idKey = "id") {
     const newById = Object.assign({}, normalist.byId);
     newById[newElement[idKey]] = Object.assign({}, newElement);
 
@@ -11,7 +12,7 @@ const set = (normalist, newElement, idKey = "id") => {
     }
 
     return Object.assign({}, normalist, { allIds: newAllIds, byId: newById });
-};
+}
 
 
 export default set;

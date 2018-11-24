@@ -10,10 +10,11 @@
   ],
   "homepage": "https://github.com/aaronmcox/normalist",
   "bugs": "https://github.com/aaronmcox/normalist/issues",
-  "main": "index.js",
+  "main": "src/index.js",
   "author": "Aaron Cox (https://aaronmcox.com)",
   "license": "MPL-2.0",
   "private": false,
+  "files": ["src/", "LICENSE", "README.md"],
   "dependencies": {},
   "devDependencies": {
     "babel-core": "^6.26.3",

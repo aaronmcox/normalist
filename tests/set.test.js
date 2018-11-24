@@ -1,5 +1,5 @@
 
-import { set } from "..";
+import { set } from "../src";
 
 let nl0, nl1, nl2;
 beforeEach(() => {

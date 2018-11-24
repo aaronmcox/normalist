@@ -1,5 +1,4 @@
 
-// const create = (array, idKey = "id", extraData = {}) => array.reduce((associalist, element) => {
 function create(array, idKey = "id", extraData = {}) {
     return array.reduce((associalist, element) => {
         if( associalist.byId[idKey] === undefined ) {
