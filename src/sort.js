@@ -8,8 +8,8 @@ function sort(normalist, compareFn) {
 
     const newAllIds = allIds
         .map(id => ([id, byId[id]]))
-        .sort((elemArray0, elemArray1) => compareFn(elemArray0[1], elemArray1[1]))
-        .map(elemArray => elemArray[0]);
+        .sort(([id0, element0], [id1, element1]) => compareFn(element0, element1))
+        .map(([id]) => id);
 
     return Object.assign({}, normalist, { allIds: newAllIds});
 }
