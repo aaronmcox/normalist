@@ -1,4 +1,10 @@
-
+/**
+ *
+ * @param {Object[]} array
+ * @param {string} [idKey="id"]
+ * @param {Object} [extraData]
+ * @returns {Object} created normalist
+ */
 function create(array, idKey = "id", extraData = {}) {
     return array.reduce((associalist, element) => {
         if( associalist.byId[idKey] === undefined ) {

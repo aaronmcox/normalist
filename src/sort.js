@@ -1,4 +1,12 @@
 
+/**
+ * @function
+ * @param {Object} normalist
+ * @param {(int[]|string[])} normalist.allIds
+ * @param {Object} normalist.byId
+ * @param {function(Object, Object):number} compareFn
+ * @returns {Object} sorted normalist
+ */
 function sort(normalist, compareFn) {
     if( typeof compareFn !== "function" ) {
         throw new TypeError(`${compareFn} is not a function.`);
