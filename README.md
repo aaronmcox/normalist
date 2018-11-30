@@ -4,21 +4,21 @@ a small libary of es6 functions used to maintain objects that follow or extend t
 # usage
 
 ## installation
-`npm install normalist`
 
-## import
-`import * as normalist from "normalist";`
+`npm i normalist`
 
 ## api
 
-```javascript
-create( array, idKey = "id", extraData = {});
-filter({allIds, byId}, filterFunc);
-find({allIds, byId}, testingFn);
-merge(destination, source);
-set(normalist, newElement, idKey = "id");
-sort(normalist, compareFn, idKey = "id");
-toArray({allIds, byId});
+```
+import * as normalist from "normalist";
+
+normalist.create( array, idKey = "id", extraData = {});
+normalist.filter({allIds, byId}, filterFunc);
+normalist.find({allIds, byId}, testingFn);
+normalist.merge(destination, source);
+normalist.set(normalist, newElement, idKey = "id");
+normalist.sort(normalist, compareFn);
+normalist.toArray({allIds, byId});
 ```
 
 
