@@ -37,3 +37,7 @@ test("create yields proper normalist when called with additional data and when i
         .toEqual(nlWithExtras);
 });
 
+test("create called with undefined array should yield an empty normalist", () => {
+    expect(create()).toEqual(data.emptyNormalist);
+});
+
