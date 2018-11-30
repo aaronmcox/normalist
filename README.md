@@ -9,7 +9,7 @@ a small libary of es6 functions used to maintain objects that follow or extend t
 
 ## api
 
-```
+```javascript
 import * as normalist from "normalist";
 
 normalist.create( array, idKey = "id", extraData = {});
