@@ -8,7 +8,7 @@ test("length of empty normalist should be 0", () => {
 });
 
 test("length of normalist with three items should be 3", () => {
-    expect(length(data.normalistOfThree).toBe(3));
+    expect(length(data.normalistOfThree)).toBe(3);
 });
 
 test("length of normalist increases by 1 when a new element is added", () => {
