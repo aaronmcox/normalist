@@ -4,6 +4,7 @@ import filter from "./filter.js";
 import find from "./find.js";
 import get from "./get.js";
 import length from "./length.js";
+import map from "./map.js";
 import merge from "./merge.js";
 import set from "./set.js";
 import sort from "./sort.js";
@@ -16,6 +17,7 @@ export {
     get,
     length,
     merge,
+    map,
     set,
     sort,
     toArray
