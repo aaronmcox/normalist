@@ -1,4 +1,9 @@
-
+/***
+ * 
+ * @param {Object} destination - base normalist
+ * @param {Object} source - normlaist to project into destination
+ * @returns {Object} merged normalist
+ */
 function merge(destination, source) {
     const newAllIds = destination.allIds.slice(0);
     const newById = Object.assign({}, destination.byId);
